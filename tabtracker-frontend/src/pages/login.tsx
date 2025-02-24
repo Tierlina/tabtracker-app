@@ -14,7 +14,7 @@ import { GithubIcon } from "@/components/icons";
 import DefaultLayout from "@/layouts/default";
 import { Input } from "@heroui/input";
 
-export default function IndexPage() {
+export default function LoginPage() {
   const [submitted, setSubmitted] = React.useState(null);
 
   const onSubmit = (e) => {
@@ -23,26 +23,37 @@ export default function IndexPage() {
     const data = Object.fromEntries(new FormData(e.currentTarget));
 
     setSubmitted(data);
+    window.location.href = "/dashboard"
   }
   return (
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <div className="inline-block max-w-lg text-center justify-center">
-          <Card>
+        <Card className="w-screen max-w-3xl p-8">
             <CardBody>
               Welcome to TabTracker!
               <p><br></br></p>
-              <Form className= "w-full max-w-L" onSubmit={onSubmit}>
+              <Form className= "w-3xl" onSubmit={onSubmit}>
                 <Input
                   isRequired
                   errorMessage="Please enter a valid email"
-                  label="Email"
+                  label="Email/Username"
                   labelPlacement="outside"
                   name="email"
                   placeholder="enter your email"
                   type="email"
                   />
-                  <Button type="submit" variant="bordered">
+                <Input
+                  label="Password"
+                  labelPlacement="outside"
+                  name="email"
+                  placeholder="enter your password"
+                  type="password"
+                  />
+                  <Button
+                   type="submit"
+                    variant="bordered"
+                    >
                     Submit
                   </Button>
                   {submitted && (
@@ -53,6 +64,15 @@ export default function IndexPage() {
                     </div>
                   )}
               </Form>
+              <p className="mt-5 mb-1">Don't have an account?</p>
+              <Button 
+
+                        showAnchorIcon
+                        as={Link}
+              href="/signup"
+              >
+                Sign Up Here
+                </Button>
             </CardBody>
           </Card>
         </div>
