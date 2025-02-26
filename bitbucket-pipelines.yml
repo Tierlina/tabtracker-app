@@ -7,7 +7,7 @@ pipelines:
         caches:
           - node
         script:
-          - npm ci
+          - npm install
 
   #  - step:
   #      name: Run Lint & Tests
