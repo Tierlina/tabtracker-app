@@ -7,8 +7,9 @@ pipelines:
         caches:
           - node
         script:
-          - npm install -g typescript
           - npm install
+        artifacts:
+          - node_modules/**
     - step:
         name: Build Project
         caches:
