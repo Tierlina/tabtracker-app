@@ -7,7 +7,7 @@ pipelines:
         caches:
           - node
         script:
-          - npm install
+          - npm ci
 
   #  - step:
   #      name: Run Lint & Tests
@@ -17,6 +17,7 @@ pipelines:
     - step:
         name: Build Project
         script:
+          - npx tsc
           - npm run build
         artifacts:
           - dist/**
