@@ -15,7 +15,7 @@ pipelines:
         caches:
           - node
         script:
-          - node -v && npm -v && tsc -v
+          - node -v && npm -v
           - npm run build
         artifacts:
           - dist/**
