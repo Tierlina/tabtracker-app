@@ -19,7 +19,7 @@ export default function LoginPage() {
 
 
   return (
-    <DefaultLayout>
+
       <section className="flex flex-col items-left justify-center gap-4 py-8 md:py-10">
         <div className="inline-block max-w-lg text-center justify-center">
           <h1 className="text-7xl mt-20 mb-10">Welcome to TabTracker!</h1>
@@ -35,7 +35,6 @@ export default function LoginPage() {
 
         </div>
       </section>
-    </DefaultLayout>
   );
 }
 function useDisclosure(): { isOpen: any; onOpen: any;onOpenChange: any; } {
