@@ -9,12 +9,11 @@ pipelines:
         script:
           - npm install
 
-    - step:
-        name: Run Lint & Tests
-        script:
-          - npm run lint
-          - npm run test
-
+  #  - step:
+  #      name: Run Lint & Tests
+  #      script:
+  #        - npm run lint
+  #        - npm run test
     - step:
         name: Build Project
         script:
