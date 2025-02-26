@@ -7,20 +7,23 @@ pipelines:
         caches:
           - node
         script:
+          - npm install -g typescript
           - npm install
-
-  #  - step:
-  #      name: Run Lint & Tests
-  #      script:
-  #        - npm run lint
-  #        - npm run test
     - step:
         name: Build Project
+        caches:
+          - node
         script:
-          - npx tsc
+          - node -v && npm -v && tsc -v
           - npm run build
         artifacts:
           - dist/**
+    - step:
+        name: Run Lint & Tests
+        script:
+          - echo "run tests"
+  #        - npm run lint
+  #        - npm run test
 
     # The following deployment steps will be executed for each pipeline run. To configure your steps and conditionally deploy see https://support.atlassian.com/bitbucket-cloud/docs/configure-bitbucket-pipelinesyml/
     - step:
