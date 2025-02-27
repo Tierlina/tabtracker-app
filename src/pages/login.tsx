@@ -66,6 +66,3 @@ export default function LoginPage() {
     </section>
   );
 }
-function useDisclosure(): { isOpen: any; onOpen: any; onOpenChange: any } {
-  throw new Error("Function not implemented.");
-}

@@ -96,9 +96,7 @@ export default function SignupPage() {
     </section>
   );
 }
-function useDisclosure(): { isOpen: any; onOpen: any; onOpenChange: any } {
-  throw new Error("Function not implemented.");
-}
-function validate() {
-  throw new Error("Function not implemented.");
-}
+
+// function validate() {
+//   throw new Error("Function not implemented.");
+// }
