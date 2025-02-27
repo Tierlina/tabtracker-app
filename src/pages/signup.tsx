@@ -46,6 +46,14 @@ export default function SignupPage() {
                 name="email"
                 type="email"
               />
+                <Input
+                isRequired
+                errorMessage="Please enter your name"
+                label="Name"
+                labelPlacement="outside"
+                name="Name"
+                type="text"
+              />
               <Input
                 label="Username"
                 labelPlacement="outside"
@@ -53,6 +61,8 @@ export default function SignupPage() {
                 type="text"
               />
               <Input
+                isRequired
+                errorMessage="Please enter a password"
                 endContent={
                   <button
                     aria-label="toggle password visibility"
@@ -68,6 +78,8 @@ export default function SignupPage() {
               />
               <Input
                 //className="max-w-xs"
+                isRequired
+                errorMessage="Please enter a password"
                 endContent={
                   <button
                     aria-label="toggle password visibility"
