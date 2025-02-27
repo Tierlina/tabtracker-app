@@ -1,7 +1,7 @@
 import { heroui } from '@heroui/theme';
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+module.exports = {// eslint-disable-line
   content: [
     './index.html',
     './src/layouts/**/*.{js,ts,jsx,tsx,mdx}',
@@ -71,5 +71,5 @@ module.exports = {
     },
   },
   darkMode: ['class', 'class'],
-  plugins: [heroui(), require('tailwindcss-animate')],
+  plugins: [heroui(), require('tailwindcss-animate')],// eslint-disable-line
 };
