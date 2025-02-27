@@ -1,5 +1,5 @@
-import { Link } from "@heroui/link";
-import { Button } from "@heroui/button";
+import { Link } from '@heroui/link';
+import { Button } from '@heroui/button';
 
 export default function LoginPage() {
   return (
@@ -19,5 +19,3 @@ export default function LoginPage() {
     </section>
   );
 }
-
-

@@ -1,13 +1,13 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from 'react-router-dom';
 
-import SignupPage from "./pages/signup";
+import SignupPage from './pages/signup';
 
-import IndexPage from "@/pages/index";
-import PricingPage from "@/pages/pricing";
-import AddTabPage from "@/pages/addTab";
-import AboutPage from "@/pages/about";
-import LoginPage from "@/pages/login";
-import DashboardPage from "@/pages/dashboard";
+import IndexPage from '@/pages/index';
+import PricingPage from '@/pages/pricing';
+import AddTabPage from '@/pages/addTab';
+import AboutPage from '@/pages/about';
+import LoginPage from '@/pages/login';
+import DashboardPage from '@/pages/dashboard';
 
 function App() {
   return (

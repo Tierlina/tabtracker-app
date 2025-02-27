@@ -1,8 +1,8 @@
-import { Button } from "@heroui/button";
-import { Card, CardBody } from "@heroui/card";
-import { Link } from "@heroui/link";
+import { Button } from '@heroui/button';
+import { Card, CardBody } from '@heroui/card';
+import { Link } from '@heroui/link';
 
-import { title } from "@/components/primitives";
+import { title } from '@/components/primitives';
 
 export default function DashboardPage() {
   return (

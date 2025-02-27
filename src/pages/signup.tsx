@@ -1,10 +1,10 @@
-import { Button } from "@heroui/button";
-import { Card, CardBody } from "@heroui/card";
-import { Form } from "@heroui/form";
-import { Input } from "@heroui/input";
-import React from "react";
-import { EyeClosed } from "lucide-react";
-import { Eye } from "lucide-react";
+import { Button } from '@heroui/button';
+import { Card, CardBody } from '@heroui/card';
+import { Form } from '@heroui/form';
+import { Input } from '@heroui/input';
+import React from 'react';
+import { EyeClosed } from 'lucide-react';
+import { Eye } from 'lucide-react';
 
 export default function SignupPage() {
   const [isVisible, setIsVisible] = React.useState(false);
@@ -28,7 +28,7 @@ export default function SignupPage() {
     >;
 
     setSubmitted(data);
-    window.location.href = "/dashboard";
+    window.location.href = '/dashboard';
   };
 
   return (
@@ -46,7 +46,7 @@ export default function SignupPage() {
                 name="email"
                 type="email"
               />
-                <Input
+              <Input
                 isRequired
                 errorMessage="Please enter your name"
                 label="Name"
@@ -74,7 +74,7 @@ export default function SignupPage() {
                 }
                 label="Password"
                 labelPlacement="outside"
-                type={isVisible ? "text" : "password"}
+                type={isVisible ? 'text' : 'password'}
               />
               <Input
                 //className="max-w-xs"
@@ -91,7 +91,7 @@ export default function SignupPage() {
                 }
                 label="Confirm Password"
                 labelPlacement="outside"
-                type={isVisible ? "text" : "password"}
+                type={isVisible ? 'text' : 'password'}
               />
               <Button className="mt-4" type="submit" variant="bordered">
                 Submit

@@ -1,9 +1,9 @@
-import { Link } from "@heroui/link";
-import { Button } from "@heroui/button";
-import { Card, CardBody } from "@heroui/card";
-import React from "react";
-import { Form } from "@heroui/form";
-import { Input } from "@heroui/input";
+import { Link } from '@heroui/link';
+import { Button } from '@heroui/button';
+import { Card, CardBody } from '@heroui/card';
+import React from 'react';
+import { Form } from '@heroui/form';
+import { Input } from '@heroui/input';
 
 export default function LoginPage() {
   const [submitted, setSubmitted] = React.useState<Record<
@@ -20,7 +20,7 @@ export default function LoginPage() {
     >;
 
     setSubmitted(data);
-    window.location.href = "/dashboard";
+    window.location.href = '/dashboard';
   };
 
   return (
