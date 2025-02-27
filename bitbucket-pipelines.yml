@@ -1,0 +1,40 @@
+image: node:18
+
+pipelines:
+  default:
+    - step:
+        name: Install Dependencies
+        caches:
+          - node
+        script:
+          - npm install
+        artifacts:
+          - node_modules/**
+    - step:
+        name: Build Project
+        caches:
+          - node
+        script:
+          - node -v && npm -v
+          - npm run build
+        artifacts:
+          - dist/**
+    - step:
+        name: Run Lint & Tests
+        script:
+          - echo "run tests"
+  #        - npm run lint
+  #        - npm run test
+
+    # The following deployment steps will be executed for each pipeline run. To configure your steps and conditionally deploy see https://support.atlassian.com/bitbucket-cloud/docs/configure-bitbucket-pipelinesyml/
+    - step:
+        name: 'Deployment to Staging'
+        deployment: staging
+        script:
+          - echo "Your deployment to staging script goes here..."
+    - step:
+        name: 'Deployment to Production'
+        deployment: production
+        trigger: 'manual'
+        script:
+          - echo "Your deployment to production script goes here..."
