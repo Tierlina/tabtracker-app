@@ -4,7 +4,7 @@
 dist
 esm/*
 public/*
-tests/*
+//tests/*
 scripts/*
 *.config.js
 .DS_Store
