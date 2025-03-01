@@ -12,7 +12,7 @@ import DashboardPage from "@/pages/dashboard";
 function App() {
   return (
     <Routes>
-      <Route element={<DashboardPage />} path="/dashboard" />
+      <Route element={<DashboardPage children={undefined} />} path="/dashboard" />
       <Route element={<LoginPage />} path="/login" />
       <Route element={<IndexPage />} path="/" />
       <Route element={<SignupPage />} path="/signup" />
