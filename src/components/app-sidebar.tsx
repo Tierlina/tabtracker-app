@@ -1,14 +1,11 @@
-import { Calendar, ChevronDown, Home, Inbox, Plus, Search, Settings } from "lucide-react"
+import { Calendar, Plus, Search, Settings } from "lucide-react"
 
 import {
   Sidebar,
   SidebarContent,
   SidebarGroup,
   SidebarGroupAction,
-  SidebarGroupContent,
   SidebarGroupLabel,
-  SidebarHeader,
-  SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarMenuSub,
